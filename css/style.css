@@ -242,16 +242,30 @@ section .skill-item {
     font-size: 16px;
     font-weight: 300;
 }
-@media screen and (max-width: 1024px) 
+@media all and (min-width: 280px) and (max-width: 576px) 
 {
     body{
-        background-color: #ccc;
+        background-color: #fff;
         
     }
     .wrapper {
         max-width: 400px;
-        margin: 40px auto;
+        margin: 30px auto;
     }
+    header .profile{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    
+    header .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: auto;
+    }
+    
     header .profile .details {
         margin-left: 25px;
     }
@@ -261,17 +275,76 @@ section .skill-item {
         color: #4595F4;
         margin-bottom: 5px;
     }
-    header .profile  .role {
+    header .profile .details  .role {
         background-color: #4595F4;
         color: #fff;
-        padding: 7px 15px;
+        padding:  5px;
+        display: flex;
+        flex-direction: column;
         border-radius: 10px;
-        margin-left: 20px;
-        margin-bottom: 5px;
+        margin-left: -10px;
+        margin-top: 5px;
     } 
+    header .profile .details span .role{
+        margin: auto;
+    }
     P{
         color: rgb(46, 44, 44);
     }
+    .form .form-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .form-row .nom{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-option{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    section .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    section .skill-item {
+        border: 1px solid #707070;
+        border-radius: 7px;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .langs .lang-item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid;
+        padding: 10px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    .experience-liste{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    .form .form-row .champ {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    
+    
 
 
 }
