@@ -252,6 +252,7 @@ section .skill-item {
         max-width: 400px;
         margin: 30px auto;
         text-align: center;
+       
     }
     header .profile{
         display: flex;
@@ -343,6 +344,8 @@ section .skill-item {
         width: 100%;
         display: flex;
         flex-direction: column;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .form .radios {
         display: flex;
